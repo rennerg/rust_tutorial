@@ -3,6 +3,13 @@ mod stack_and_heap;
 mod data_structures;
 mod pattern_matching;
 mod functions;
+mod lifetime;
+mod odds_and_ends;
+extern crate phrases;
+
+use phrases::greetings::french;
+
+// Seet https://crates.io/crates for a NuGet-like list of available packages
 
 const MEANING_OF_LIFE:i8 = 42;
 static mut NOT_VERY_SAFE:i32 = 123;
@@ -40,7 +47,19 @@ fn main() {
 
     functions::higher_order_functions();
 
+    lifetime::ownership();
+
     functions::traits();
+
+    odds_and_ends::consuming_crates();
+
+    println!("English: {}, {}",
+        phrases::greetings::english::hello(),
+        phrases::greetings::english::goodbye());
+
+        println!("French: {}, {}",
+        french::hello(),
+        french::goodbye());
 }
 
 fn fundamental_data_types()

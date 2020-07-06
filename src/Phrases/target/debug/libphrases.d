@@ -1,0 +1,1 @@
+C:\src\sandbox\rust\tutorial\hello_world\src\Phrases\target\debug\libphrases.rlib: C:\src\sandbox\rust\tutorial\hello_world\src\Phrases\src\greetings\english.rs C:\src\sandbox\rust\tutorial\hello_world\src\Phrases\src\lib.rs
